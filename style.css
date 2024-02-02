@@ -292,17 +292,33 @@ p {
   background-color: #464646;
 }
 
+footer {
+  display: flex;
+  font-size: 11px;
+  margin-top: 43.8%;
+  align-items: center;
+  justify-content: center;
+}
+
 
 @media screen and (max-width: 600px) {
   .container {
     font-size: 14px;
+    width: 80vw;
+    padding: 2em 1.5em; 
   }
-  .info {
-    grid-template-columns: 1fr;
+
+  .search-container {
+    grid-template-columns: 1fr; 
   }
-  .poster {
-    margin: auto;
-    width: auto;
-    max-height: 10.8em;
+
+  #search-suggestions {
+    left: 2%; 
+    width: 94%; 
+  }
+
+  .wishlist-popup {
+    margin-left: 70%; 
+  
   }
 }
