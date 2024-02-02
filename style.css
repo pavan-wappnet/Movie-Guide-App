@@ -212,8 +212,85 @@ p {
   background-color:#6699CC ;
 }
 
+#openReviewPopupBtn {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffb92a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
 
+.review-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffb92a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
 
+.review-container {
+  text-align: center;
+}
+
+.review-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#reviewForm {
+  display: grid;
+  gap: 15px;
+}
+
+#rating {
+  padding: 8px;
+}
+
+#review {
+  padding: 8px;
+  resize: none;
+}
+
+#email {
+  padding: 8px;
+}
+
+#submitReviewBtn {
+  padding: 10px;
+  background-color: #6699CC;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#submitReviewBtn:hover {
+  background-color: #ff9632;
+}
+
+#closeReviewPopupBtn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #585858;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#closeReviewPopupBtn:hover {
+  background-color: #464646;
+}
 
 
 @media screen and (max-width: 600px) {

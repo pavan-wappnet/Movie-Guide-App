@@ -221,5 +221,37 @@ function clearSearchSuggestions() {
   searchSuggestionsContainer.innerHTML = '';
 }
 
+function openReviewPopup() {
+  let reviewPopup = document.getElementById("reviewPopup");
+  if (reviewPopup) {
+    reviewPopup.style.display = "block";
+  }
+}
+
+// Function to close the review popup
+function closeReviewPopup() {
+  let reviewPopup = document.getElementById("reviewPopup");
+  if (reviewPopup) {
+    reviewPopup.style.display = "none";
+  }
+}
+
+// Function to submit a review
+function submitReview() {
+  let rating = document.getElementById("rating").value;
+  let reviewText = document.getElementById("review").value;
+  let email = document.getElementById("email").value;
+
+  // Perform further actions with the review data as needed
+
+  // Close the review popup after submission
+  closeReviewPopup();
+}
+
+document.getElementById("openReviewPopupBtn").addEventListener("click", openReviewPopup);
+document.getElementById("closeReviewPopupBtn").addEventListener("click", closeReviewPopup);
+document.getElementById("submitReviewBtn").addEventListener("click", submitReview);
+
+
 searchBtn.addEventListener("click", getMovie);
 window.addEventListener("load", getMovie);
